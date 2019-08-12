@@ -4,7 +4,11 @@
       <h3>Loading...</h3>
     </div>
     <div v-if="error">
-      <h3>{{error}}</h3>
+       <h3>
+        {{error}}
+        <br />Please make sure your steam profile is public to use this website.
+        <br />Currently you must use your "steamID64" to get stats!
+      </h3>
       <router-link to="/">Go Back</router-link>
     </div>
     <div v-if="profileData" class="container">
